@@ -44,7 +44,7 @@ A felhasználók a regisztráció során rögzíthetik az őket érdeklő témak
 
 A hírolvasási, és szűrt megjelenítési funkciókon felül rendelkeznie kell beépített időjárás megjelenítési, és útvonaltervezési funkcióval, valamint beépített keresővel, amely nemcsak a honlapon keres.
 
-## 1.   Funkcionális követelmények:
+## 4.   Funkcionális követelmények:
 
 1. <u>Jogosultsági szintek:</u>
 
