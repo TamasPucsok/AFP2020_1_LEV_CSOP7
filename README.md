@@ -10,7 +10,7 @@
 - Pucsok Tamás
 - Kovács Máté
 
-Rövid leírás:
+<u>Rövid leírás:</u>
 
 A projekt célja egy híroldal létrehozása, amely hirdetési bevételt generál. Mivel a piac jelenleg telített, ezért a híroldal támogatja az érdeklődési körökre bontott, személyes preferenciákon nyugvó hírolvasás lehetőségét. 
 
