@@ -25,3 +25,25 @@ A híroldal egy webböngészőből elérhető oldal, amely lehetővé teszi a l�
 A megrendelő bevételeit a hirdetési funkciók biztosítják, ezért a fejlesztés, design kialakítás során biztosítani kell az egyes siteokon a hirdetések elhelyezését. A projektnek nem scopja a hirdetések beillesztése, azonban az oldalon való megjelenítés definiálása, az oldal felkészítése igen. 
 
 Beépülő modulokon keresztül biztosítjuk a nem core szolgáltatások elérhetőségét, tehát ezek fejlesztése nem cél, azonban azok integrálása igen.
+
+## 2.   Jelenlegi helyzet
+
+A projekt célja egy új platform létrehozása, nem egy meglévő site módosítása. Az üzleti igények definiálásában a tervezési szakaszban a projektcsapat (mint megrendelő) meghatározta az elvárt funkcionalitást. 
+
+## 3.   Funkcionális követelmények:
+
+- **Jogosultsági szintek**:
+
+  o  <u>Adminisztrátori jogosultság:</u> Biztosítja a jogosultsággal rendelkező számára, hogy a honlap forráskódjához hozzáférjen, módosításokat hajtson végre a rendszerben és tartalmakat tegyen hozzáférhetővé. Írási/olvasási (R/W) jogokkal rendelkezik a honlap mögöttes adatbázisában közvetlenül az adatbázishoz való hozzáféréssel. 
+
+  o  <u>Olvasási (látogatói) jogosultság:</u> Nem fér hozzá a kódhoz, nem módosíthat a tartalmakon, csak és kizárólag olvasási funkcióval rendelkezik a honlapra vonatkozóan. Az adatbázisban az R/W jogosultság csak saját rekordjára érvényes. Mindkét funkciót csak közvetetten éri el. 
+
+- **Honlap felépítése (látogató):**
+
+  o  <u>Kezdőképernyő:</u> Csak belépésre használható. Tartalmaz képfájl beillesztési lehetőséget (1-5 db), egy felhasználónév és egy jelszó megadására használható szöveges boxot, valamint a belépési kódsor futtatását elindító „belépés” gombot. Egyéb funkciókkal nem rendelkezik
+
+  o  <u>Belépés utáni nyitóképernyő:</u>
+  - <u>Érdeklődésnek megfelelő hírek:</u> A sikeres belépést követően lista szerűen megjelennek a felhasználó rekordjában definiált érdeklődési körhöz kapcsolódó hírek. Hírek darabszáma nem korlátozott, az oldal nem statikus, tehát scroll funkció használata megengedett.
+  - <u>Időjárás:</u> A honlapon egy külső szolgáltató díjmentes modulja kerül integrálásra. 
+  - <u>Útvonaltervező:</u> A honlapon egy külső szolgáltató díjmentes modulja kerül integrálásra.
+
