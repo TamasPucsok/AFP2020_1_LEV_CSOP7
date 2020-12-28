@@ -1,6 +1,6 @@
- **Híroldal létrehozás projekt**
+**Híroldal létrehozás projekt**
 
- Üzleti követelmény specifikáció
+Üzleti követelmény specifikáció
 
 Verzió: 1.0
 
@@ -68,3 +68,15 @@ A hírolvasási, és szűrt megjelenítési funkciókon felül rendelkeznie kell
 4. <u>Oldalakon banner kezelés</u>
 
 5. <u>Kapcsolat/jogszabályi és egyéb kötelező tartalmak</u>
+
+## 5.   Jogszabályi követelmények
+
+A programnak a mindenkori Magyarországi jogszabályi, rendeleti előírásoknak kell megfelelnie. A projekt indításakor hatályos jogszabályok listája az alábbiakban olvasható:
+
+·     2003. évi C. törvény az elektronikus hírközlésről 
+
+·     AZ EURÓPAI PARLAMENT ÉS A TANÁCS (EU) 2016/679 RENDELETE
+ (2016. április 27.)
+ a természetes személyeknek a személyes adatok kezelése tekintetében történő védelméről és az ilyen adatok szabad áramlásáról, valamint a 95/46/EK irányelv hatályon kívül helyezéséről (általános adatvédelmi rendelet)
+
+·     2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról   ( Infotv.)
