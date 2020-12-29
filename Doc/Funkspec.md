@@ -75,3 +75,16 @@ Az alábbi táblában **userfield1-n, és warning 1-n részletek a rendszerterv 
 | Regisztráció | K6     |      Személyes adatok      | Személyes adatok megadásának  lehetősége a regisztrációs folyamatban  **Userfield11:Név**  **Userfield12:Születési dátum**  **Regisztráció befejezése gomb:** Az adatbázis rekord létrehozása a gomb használatával. |
 
  
+
+|    Belépés     |  K7  |               Jelszavas hitelesítés               | Jelszó vizsgálata a belépéskor a  mögöttes adatbázisban a **K1** kritériumoknak megfelelően. |
+| :------------: | :--: | :-----------------------------------------------: | ------------------------------------------------------------ |
+|    Belépés     |  K8  |       Sikeres / sikertelen belépés kezelése       | Elágazás a folyamatban a  sikeres/sikertelen belépésre. Sikertelen esetén **Warning1.**  Sikeres esetén  átirányítás a **K11**-nek megfelelően. |
+|    Belépés     |  K9  | Sikertelen esetén lehetőség az újra próbálkozásra | A felhasználó nem megfelelő  belépési kód esetén újra próbálkozhat.  Limit: Nincs |
+|    Belépés     | K10  |        Sikeres esetén kezdőlapra irányítás        | Belépés a megfelelő jelszó-felhasználónév párral sikeres autentikációt követően megtörténik. Kezdőoldal URL a rendszertervben kerül meghatározásra. A kezdőlapon a **userfield 6-10 (preferenciák)**  alapján jelenítünk meg tartalmat. |
+| Oldalfunkciók  | K11  |                    Hírolvasás                     | Hírek olvasása a felhasználó által, a hírek címére kattintással. A címek linket tartalmaznak amely a hír oldalára irányítja a felhasználót. |
+| Oldalfunkciók  | K12  |               Időjárás megtekintése               | Magyar időjárás adatok megjelenítése.  Beépülő modul, API hívás. Preferáltan accuweather free API. |
+| Oldalfunkciók  | K13  |                      Keresés                      | Külső google.com keresés  használata. Integrált megoldással. |
+| Oldalfunkciók  | K14  |                  Útvonaltervezés                  | Külső utvonaltervező keresés  használata. Integrált megoldással. |
+| Oldalfunkciók  | K15  |                    Impresszum                     | Kapcsolati adatok, törvényi  hivatkozások megjelentése egy külön aloldalon. **Dokumentum csatolási  funkció:**(Admin:R/W; Látogató:R)  **Dokumentum darabszám**:2  **Támogatott formátum:** Docx/pdf. |
+| Oldalfunkciók  | K16  |                      Kilépés                      | Belépett  felhasználó kiléphet az oldalról a kilépés  gomb használatával. |
+| Admin funkciók | K17  |                       Admin                       | Az admin jogokkal rendelkezők hozzáférnek  az adatokhoz és a 3. pontban részletezetteknek megfelelően kezelhetik. |

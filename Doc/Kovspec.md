@@ -101,3 +101,18 @@ Mivel a projekt nem meglévő alapokra építkezik, ezért nem szükséges jelen
 | Regisztráció |  K4  | Kapcsolati adatok megadása |           email / telefonos elérhetőség rögzítése.           |
 | Regisztráció |  K5  |  Érdeklődési kör megadása  |            Érdeklődési kör választása  listából.             |
 | Regisztráció |  K6  |      Személyes adatok      | Személyes adatok megadásának  lehetősége a belépési folyamatban. |
+
+
+
+|    Belépés     | K7   |               Jelszavas hitelesítés                |                Jelszó vizsgálata a belépéskor                |
+| :------------: | ---- | :------------------------------------------------: | :----------------------------------------------------------: |
+|    Belépés     | K8   |       Sikeres / sikertelen belépés  kezelése       |   Elágazás a folyamatban a  sikeres/sikertelen belépésre.    |
+|    Belépés     | K9   | Sikertelen esetén lehetőség az  újra próbálkozásra | A felhasználó nem megfelelő  belépési kód esetén újra próbálkozhat. |
+|    Belépés     | K10  |        Sikeres esetén kezdőlapra  irányítás        |      Belépés a megfelelő  jelszó-felhasználónév párral.      |
+| Oldalfunkciók  | K11  |                     Hírolvasás                     |             Hírek olvasása a felhasználó által.              |
+| Oldalfunkciók  | K12  |               Időjárás megtekintése                |            Magyar időjárás adatok  megjelenítése.            |
+| Oldalfunkciók  | K13  |                      Keresés                       |            Külső google.com keresés  használata.             |
+| Oldalfunkciók  | K14  |                  Útvonaltervezés                   |                  Beépített térkép/útvonal.                   |
+| Oldalfunkciók  | K15  |                     Impresszum                     |   Kapcsolati adatok, törvényi  hivatkozások megjelentése.    |
+| Oldalfunkciók  | K16  |                      Kilépés                       |         Belépett  felhasználó kiléphet az oldalról.          |
+| Admin funkciók | K17  |                       Admin                        |   Az admin jogokkal rendelkezők hozzáférnek  az adatokhoz.   |
