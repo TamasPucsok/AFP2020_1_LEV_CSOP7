@@ -80,3 +80,11 @@ A programnak a mindenkori Magyarországi jogszabályi, rendeleti előírásoknak
  a természetes személyeknek a személyes adatok kezelése tekintetében történő védelméről és az ilyen adatok szabad áramlásáról, valamint a 95/46/EK irányelv hatályon kívül helyezéséről (általános adatvédelmi rendelet)
 
 ·     2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról   ( Infotv.)
+
+## 6.   Igényelt üzleti folyamatok
+
+Mivel a projekt nem meglévő alapokra építkezik, ezért nem szükséges jelenlegi üzleti folyamatot implementálni.
+
+Az új folyamatok részletezése az alábbiakban látható:
+
+![](G:\RFT\Doc\folyamatrészletezés.png)
