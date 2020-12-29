@@ -61,4 +61,17 @@ A projekt célja egy új platform létrehozása, nem egy meglévő site módosí
 
 ## 4.   Követelménylista
 
-Mivel a projekt nem meglévő alapokra építkezik, ezért nem szükséges a jelenlegi üzleti folyamatot implementálni. A követelménylista a megrendelő által készített követelményspecifikáción alapul.
+Mivel a projekt nem meglévő alapokra építkezik, ezért nem szükséges a jelenlegi üzleti folyamatot implementálni. A követelménylista a megrendelő által készített követelményspecifikáción alapul. 
+
+Az alábbi táblában **userfield1-n, és warning 1-n részletek a rendszerterv dokumentumban elérhetőek.**
+
+|  **Modul**   | **ID** |        **Funkció**         | **Funkció részletei**                                        |
+| :----------: | ------ | :------------------------: | ------------------------------------------------------------ |
+|   Érkezés    | K1     |          Belépés           | Az oldal rendelkezik belépési  funkcióval a kezdeti oldalon. A belépési hitelesítés a jelszó-felhasználónév  pár adatbázisból történő validálásán alapul. Tiltás funkció nem kerül  beépítésre  CR1: Meghatározott sikertelen  próbálkozás után tiltás. |
+|   Érkezés    | K2     |        Regisztrálás        | Az oldal rendelkezik regisztrálás  funkcióval a kezdeti oldalon. A regisztráció gomb használata közvetlenül a K3  ID funkciót tartalmazó aloldalra irányítja át a felhasználót. |
+| Regisztráció | K3     | Új látogatok regisztrálása | Új aloldal, ahol a felhasználó  elindíthatja a regisztrációt. Megadásra kerül a felhasználónév. A **felhasználónév  (user field 1)** az oldalról való tovább lépéskor kerül rögzítésre a mögöttes adatbázisban. A K3-K6 funkciók adatinak bevitele egy oldalon történik. Minden mező írható a látogató által. |
+| Regisztráció | K4     | Kapcsolati adatok megadása | E-mail / telefonos elérhetőség rögzítése oldalak közötti navigálás nélkül.  **User field2:email**  **User field3:telefon** |
+| Regisztráció | K5     |  Érdeklődési kör megadása  | Érdeklődési kör választása listából Thickbox használata az előre  definiált kategóriákra. Az egyes kategóriákat az ügyfél bepipálhatja, a regisztráció lezárásakor az adatbázisba íródik.  **Userfield4-10: (kategória 1-6)** |
+| Regisztráció | K6     |      Személyes adatok      | Személyes adatok megadásának  lehetősége a regisztrációs folyamatban  **Userfield11:Név**  **Userfield12:Születési dátum**  **Regisztráció befejezése gomb:** Az adatbázis rekord létrehozása a gomb használatával. |
+
+ 

@@ -88,3 +88,16 @@ Mivel a projekt nem meglévő alapokra építkezik, ezért nem szükséges jelen
 Az új folyamatok részletezése az alábbiakban látható:
 
 ![](G:\RFT\Doc\folyamatrészletezés.png)
+
+## 7.   Igényelt üzleti funkciók
+
+Mivel a projekt nem meglévő alapokra építkezik, ezért nem szükséges jelenlegi üzleti folyamatot implementálni.
+
+| Modul        |  ID  |          Funkció           |                            Leírás                            |
+| ------------ | :--: | :------------------------: | :----------------------------------------------------------: |
+| Érkezés      |  K1  |          Belépés           | Az oldal rendelkezik belépési  funkcióval a kezdeti oldalon. |
+| Érkezés      |  K2  |        Regisztrálás        | Az oldal rendelkezik regisztrálás  funkcióval a kezdeti oldalon. |
+| Regisztráció |  K3  | Új látogatok regisztrálása | Új aloldal, ahol a felhasználó  elindíthatja a regisztrációt. |
+| Regisztráció |  K4  | Kapcsolati adatok megadása |           email / telefonos elérhetőség rögzítése.           |
+| Regisztráció |  K5  |  Érdeklődési kör megadása  |            Érdeklődési kör választása  listából.             |
+| Regisztráció |  K6  |      Személyes adatok      | Személyes adatok megadásának  lehetősége a belépési folyamatban. |
