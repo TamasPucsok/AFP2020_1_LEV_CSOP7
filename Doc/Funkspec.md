@@ -47,3 +47,18 @@ A projekt célja egy új platform létrehozása, nem egy meglévő site módosí
   - <u>Időjárás:</u> A honlapon egy külső szolgáltató díjmentes modulja kerül integrálásra. 
   - <u>Útvonaltervező:</u> A honlapon egy külső szolgáltató díjmentes modulja kerül integrálásra.
 
+- **Admin jogok:** 
+
+  o  <u>Hírfeltöltés:</u> Az adminisztrátori joggal lehetőséget biztosítunk hírek megjelenítésére. 
+
+  o  <u>Regisztrációs adatok áttekintése:</u> Megtekinthető az egyes felhasználók regisztráció során megadott adatainak halmaza
+
+  o  <u>Hírek esetében kategória megjelölés:</u> Kategória megjelenítése, amely az adatbázisban ügyfél rekordonként tárolt preferenciákkal való összekapcsolást biztosítja.
+
+- **Oldalakon banner kezelés:** Az üzemeltető számára a bevételeket a hirdetések elhelyezése jelenti. Ezért a fejlesztés során lehetőséget kell biztosítani hirdetések elhelyezésére. Számában nem korlátozott. A projekt jelen fázisában 2 hirdetés/oldal elhelyezésére biztosítunk lehetőséget. 
+
+- **Kapcsolat/jogszabályi és egyéb kötelező tartalmak:** A jogszabályi háttér részletezését a követelmény specifikáció tartalmazza. A szállítónak feladata a kapcsolati adatokra egy oldal létrehozása, jogszabályok megjelenítése, és dokumentum feltöltési hely kialakítása, azonban a jogszabályi megfelelés a feltöltött tartalmak vonatkozásában nem feladat.
+
+## 4.   Követelménylista
+
+Mivel a projekt nem meglévő alapokra építkezik, ezért nem szükséges a jelenlegi üzleti folyamatot implementálni. A követelménylista a megrendelő által készített követelményspecifikáción alapul.
