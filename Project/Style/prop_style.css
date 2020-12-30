@@ -1,0 +1,23 @@
+body{
+	background: linear-gradient(rgba(50,50,50, 0.7),rgba(50,50,50, 0.7)), url(prop.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.details-box{
+	max-width: 800px;
+	float: none;
+	margin: 40px auto;
+	
+}
+
+.details{
+	background: rgba(211,211,211, 0.7);
+	padding: 30px;
+	
+}
+
+}
+.form-control{
+	background-color: transparent !important;
+}
