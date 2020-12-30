@@ -93,22 +93,18 @@ Az új folyamatok részletezése az alábbiakban látható:
 
 Mivel a projekt nem meglévő alapokra építkezik, ezért nem szükséges jelenlegi üzleti folyamatot implementálni.
 
-| Modul        |  ID  |          Funkció           |                            Leírás                            |
-| ------------ | :--: | :------------------------: | :----------------------------------------------------------: |
-| Érkezés      |  K1  |          Belépés           | Az oldal rendelkezik belépési  funkcióval a kezdeti oldalon. |
-| Érkezés      |  K2  |        Regisztrálás        | Az oldal rendelkezik regisztrálás  funkcióval a kezdeti oldalon. |
-| Regisztráció |  K3  | Új látogatok regisztrálása | Új aloldal, ahol a felhasználó  elindíthatja a regisztrációt. |
-| Regisztráció |  K4  | Kapcsolati adatok megadása |           email / telefonos elérhetőség rögzítése.           |
-| Regisztráció |  K5  |  Érdeklődési kör megadása  |            Érdeklődési kör választása  listából.             |
-| Regisztráció |  K6  |      Személyes adatok      | Személyes adatok megadásának  lehetősége a belépési folyamatban. |
-
-
-
-|    Belépés     | K7   |               Jelszavas hitelesítés                |                Jelszó vizsgálata a belépéskor                |
-| :------------: | ---- | :------------------------------------------------: | :----------------------------------------------------------: |
-|    Belépés     | K8   |       Sikeres / sikertelen belépés  kezelése       |   Elágazás a folyamatban a  sikeres/sikertelen belépésre.    |
-|    Belépés     | K9   | Sikertelen esetén lehetőség az  újra próbálkozásra | A felhasználó nem megfelelő  belépési kód esetén újra próbálkozhat. |
-|    Belépés     | K10  |        Sikeres esetén kezdőlapra  irányítás        |      Belépés a megfelelő  jelszó-felhasználónév párral.      |
+| Modul          |  ID  |                      Funkció                       |                            Leírás                            |
+| -------------- | :--: | :------------------------------------------------: | :----------------------------------------------------------: |
+| Érkezés        |  K1  |                      Belépés                       | Az oldal rendelkezik belépési  funkcióval a kezdeti oldalon. |
+| Érkezés        |  K2  |                    Regisztrálás                    | Az oldal rendelkezik regisztrálás  funkcióval a kezdeti oldalon. |
+| Regisztráció   |  K3  |             Új látogatok regisztrálása             | Új aloldal, ahol a felhasználó  elindíthatja a regisztrációt. |
+| Regisztráció   |  K4  |             Kapcsolati adatok megadása             |           email / telefonos elérhetőség rögzítése.           |
+| Regisztráció   |  K5  |              Érdeklődési kör megadása              |            Érdeklődési kör választása  listából.             |
+| Regisztráció   |  K6  |                  Személyes adatok                  | Személyes adatok megadásának  lehetősége a belépési folyamatban. |
+| Belépés        |  K7  |               Jelszavas hitelesítés                |                Jelszó vizsgálata a belépéskor                |
+| Belépés        |  K8  |       Sikeres / sikertelen belépés  kezelése       |   Elágazás a folyamatban a  sikeres/sikertelen belépésre.    |
+| Belépés        |  K9  | Sikertelen esetén lehetőség az  újra próbálkozásra | A felhasználó nem megfelelő  belépési kód esetén újra próbálkozhat. |
+| Belépés        | K10  |        Sikeres esetén kezdőlapra  irányítás        |      Belépés a megfelelő  jelszó-felhasználónév párral.      |
 | Oldalfunkciók  | K11  |                     Hírolvasás                     |             Hírek olvasása a felhasználó által.              |
 | Oldalfunkciók  | K12  |               Időjárás megtekintése                |            Magyar időjárás adatok  megjelenítése.            |
 | Oldalfunkciók  | K13  |                      Keresés                       |            Külső google.com keresés  használata.             |
