@@ -1,0 +1,21 @@
+body{
+	background: linear-gradient(rgba(50,50,50, 0.7),rgba(50,50,50, 0.7)), url(image.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+.newsupload-box{
+	max-width: 500px;
+	float: none;
+	margin: 150px auto;
+	
+}
+
+.data-field{
+	background: rgba(211,211,211, 0.7);
+	padding: 20px;
+	
+}
+.form-control{
+	background-color: transparent !important;
+}
