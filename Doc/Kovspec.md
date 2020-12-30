@@ -87,7 +87,7 @@ Mivel a projekt nem meglévő alapokra építkezik, ezért nem szükséges jelen
 
 Az új folyamatok részletezése az alábbiakban látható:
 
-![](G:\RFT\Doc\folyamatrészletezés.png)
+![Folyamat](https://github.com/TamasPucsok/AFP2020_1_LEV_CSOP7/blob/main/Doc/folyamat.png)
 
 ## 7.   Igényelt üzleti funkciók
 
