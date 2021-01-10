@@ -215,40 +215,42 @@ MySql adatbázis szervert használunk az adatok tárolására.
 
 ## 11. Tesztterv
 
-A rendszerterv szerint implementált szoftver tesztelésének célja, hogy ellenőrizze az *Üzleti folyamatok modellje* című pontban meghatározott folyamatok helyes, specifikáció szerinti lefutását, valamint hogy a kliens webes felület felhasználóbarát módon jelenik meg, és használható különböző hardver és szoftverkörnyezetben.
+A tesztelés célja a projekt által leszállított fejlesztés átadás előtti funkcionális tesztelése. A tesztelés során a tesztelők feladata a fejezeteb rögzített tesztesetek futtatása, valamint a futtatási eredmények rögzítése a  jegyzőkönyvben. (Doc/Teszt_JEgyzokonyv.MD)
 
-A tesztelés során használt kiszolgáló hardverkonfigurációja a telepítés során használt hardverrel kompatibilis, teljesítményben (processzor, operatív memória, háttértár) nem tér el jelentősen. A telepítéshez természetesen az általunk ajánlott konfiguráció kerül beszerzésre a felhasználó könyvtár által.
+A tesztelés során tekintettel arra, hogy a weboldal mögötti adatbázis lokális szervereken fut, javasolt az egyes teszt funkciókat csoportosan tesztelni, illetve  tesztelés során minden tesztelőnek létrehozni felhasználókat és tartalmat a saját adatbázisában.  
 
 A tesztelés során használt kliens hardverek a napjainkban általánosan elterjedt hardverkonfigurációjú PC-k illetve laptopok, melyeken a leggyakrabban használt böngészőkön (Google Chrome, Mozilla Firefox, Microsoft Edge) teszteljük a rendszert az alábbiakban részletezettek szerint. A minimum hardverkonfiguráció: Intel Celeron processzor, 4GB RAM, 128GB HDD, a képernyők felbontása: 1280x1024, 1920x1080.
 
 A tesztelés során az üzleti folyamatokhoz tartozó különböző forgatókönyvek eredményét vizsgáljuk. Amennyiben az elvártnak megfelelő eredményt kapjuk, a teszteset sikeresnek tekinthető, ellenkező esetben a hibát rögzítjük a tesztjegyzőkönyvben. Ezt követően a feljegyzett hibákat javítjuk a szoftverben, és újbóli tesztelésnek vetjük alá a rendszert.
 
-### 11.2 Tesztelt üzleti folyamatok adminisztrátorok számára:
+A hibákat az alábbi három kategóriába soroljuk:
+
+Severity1:Kritikus hiba, átvételt meghiúsítja azonnal javítandó
+
+Severity2:Nem kritikus hiba, azonban az átvételt meghiúsítja, átadásig javítandó
+
+Severity3:Alacsony prioritású hiba. Javítás az átadást követő 30 napban szükséges
+
+### 11.1 Tesztesetek
+
+|         Teszteset         | Funkció | Lépés | Feladat                                      | Elvárt eredmény          | Teszteset száma |
+| :-----------------------: | ------- | ----- | -------------------------------------------- | ------------------------ | --------------- |
+| Lending page- Login Admin | K1      | 1     | Index oldal megnyitása böngészőben           | Oldal megnyitásra került | 1               |
+| Lending page- Login Admin | K1      | 2     | Belépés előzetesen rögzített *admin* userrel | Belépés sikeres          | 1               |
+| Lending page -Login User  | K1      | 1     | Index oldal megnyitása böngészőben           | Oldal megnyitásra került | 2               |
+| Lending page - Login User | K1      | 3     | Belépés előzetesen rögzített *user* userrel  | Belépés sikeres          | 2               |
 
 
 
-**Belépés a rendszerbe:**
+|        Teszteset        | Funkció | Lépés | Feladat                                                      | Elvárt eredmény                                              | Teszteset száma |
+| :---------------------: | ------- | ----- | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------- |
+| Lending page- REG Admin | K2      | 1     | Index oldal megnyitása böngészőben és regisztrációra kattintás | Oldal megnyitásra került, regisztrációs oldal megjelenik     | 3               |
+| Lending page- REG Admin | K2      | 2     | Regisztrációhoz szükséges adatok bevitele és folyamat véglegesítése | Regisztráció sikeres. Regisztráció után az adatbázisban látható a felhasználó | 3               |
+| Lending page- REG USER  | K2      | 1     | Index oldal megnyitása böngészőben és regisztrációra kattintás | Oldal megnyitásra került, regisztrációs oldal megjelenik     | 4               |
+| Lending page- REG USER  | K2      | 2     | Regisztrációhoz szükséges kapcsolati adatok bevitele         | Sikeres adatbevitel                                          | 4               |
+| Lending page- REG USER  | K2      | 3     | Preferencia checkbox töltés                                  | Dobozok láthatóak, adatbevitel sikeres. Regisztráció után az adatbázisban látható a felhasználó | 4               |
 
-**Tesztesetek:**
 
-1. Nem regisztrált felhasználónév-jelszó kombináció. Elvárt eredmény: a rendszer hibaüzenetben jelzi ezt a felhasználó számára.
-2. Regisztrált felhasználónév-jelszó kombináció. Elvárt eredmény: a rendszer belépteti az adminisztrátort.
-
-### 11.2.1 Olvasók adminisztrációjának tesztelése:
-
-**A) Olvasó regisztrálása a rendszerben:**
-
-### 11.2.2 Katalógus adminisztrációjának tesztelése:
-
-**A) Új hír regisztrációja:**
-
-### 11.3 Olvasói műveletek tesztelése:
-
-**A) Belépés a rendszerbe:**
-
-**Tesztesetek:**
-
-1. 
 
 ## 12. Telepítési terv
 
