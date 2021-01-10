@@ -117,7 +117,7 @@ A rendszerünkben két rendszerszereplő csoportot különböztetünk meg. Az eg
 
 ### 5.5 Képernyőtervek
 
-A képernyőtervek egy html/css kód használatával megírt prototípus weboldal formájában állnak rendelkezésre, melyeket a leendő felhasználók számára készítettünk el a funkcionális specifikáció részeként, és mivel pozitív fogadtatásra talált, ezért a rendszerterv része is lett. A forrás fájlok a [prototype](https://github.com/beresgabor76/AFP2020_1_Lev_Csop2/tree/main/Doc/prototype/) GitHub mappából tölthetőek le, ezt követően lehet megjeleníteni az oldalakat böngészőben. A prototípus nem fed le minden forgatókönyvet, az űrlapok mezői általában adatok nélkül szerepelnek, néhány esetben demonstratív jelleggel ki van töltve. Visszajelző üzenetek is csak az újonnan felvett olvasók, könyvtárosok és könyvek, valamint jelszómódosítás esetén vannak. Azonban a menürendszerből minden funkcióhoz tartozó képernyőterv - beviteli űrlapok, listák(demo adatokkal) - elérhetőek.
+A képernyőtervek egy html/css kód használatával megírt prototípus weboldal formájában állnak rendelkezésre, melyeket a leendő felhasználók számára készítettünk el a funkcionális specifikáció részeként, és mivel pozitív fogadtatásra talált, ezért a rendszerterv része is lett. A forrás fájlok a GitHub-ról tölthetőek le, ezt követően lehet megjeleníteni az oldalakat böngészőben. A prototípus nem fed le minden forgatókönyvet, az űrlapok mezői adatok nélkül szerepelnek, néhány esetben ki van töltve. A menü rendszerből minden funkcióhoz tartozó képernyőterv user és admin oldalról is elérhetőek.
 
 Főbb oldalak:
 
@@ -168,7 +168,7 @@ A backend a webszereveren fut, a vékony kliens a böngészőből elérhető a f
 
 ### 8.3 Változások kezelése
 
-Minden változás lekezelése szerver oldalon történik, a kliens oldalon nincs szükség új komonensek telepítésére.
+Minden változás lekezelése szerver oldalon történik, a kliens oldalon nincs szükség új komponensek telepítésére.
 
 ## 9. Adatbázisterv
 
@@ -215,7 +215,7 @@ MySql adatbázis szervert használunk az adatok tárolására.
 
 ## 11. Tesztterv
 
-A tesztelés célja a projekt által leszállított fejlesztés átadás előtti funkcionális tesztelése. A tesztelés során a tesztelők feladata a fejezeteb rögzített tesztesetek futtatása, valamint a futtatási eredmények rögzítése a  jegyzőkönyvben. (Doc/Teszt_JEgyzokonyv.MD)
+A tesztelés célja a projekt által leszállított fejlesztés átadás előtti funkcionális tesztelése. A tesztelés során a tesztelők feladata a fejezetbe rögzített tesztesetek futtatása, valamint a futtatási eredmények rögzítése a  jegyzőkönyvben. (Doc/Teszt_JEgyzokonyv.MD)
 
 A tesztelés során tekintettel arra, hogy a weboldal mögötti adatbázis lokális szervereken fut, javasolt az egyes teszt funkciókat csoportosan tesztelni, illetve  tesztelés során minden tesztelőnek létrehozni felhasználókat és tartalmat a saját adatbázisában.  
 
