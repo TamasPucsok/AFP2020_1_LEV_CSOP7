@@ -45,7 +45,7 @@
      </div>
 	 
 	 <div class="form-group">
-     <label> Gazdaság </label>
+     <label> Pénzügy </label>
      <input type= "checkbox" name= "economy" class="form-control">
      </div>
 
