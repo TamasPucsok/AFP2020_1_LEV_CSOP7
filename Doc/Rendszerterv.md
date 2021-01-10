@@ -4,6 +4,10 @@
 
 ### 2.1 Projektszerepkörök, felelősségek
 
+Projekt Manager: Kovács Máté
+
+Feladata a projektagok közötti kommunikáció szervezése, irányítása.
+
 Scrum master: Győri Zoltán 
 
 Feladata a kommunikáció a csapat tagjaival, az elvégzett és a következő feladatok átbeszélése, akadályok (impediment) feltárása.
@@ -15,6 +19,7 @@ Feladata Product Backlog kezelése, prioritással látja el a sztorikat és megh
 Üzleti szereplők (Stakeholders):
 
 - Megrendelő:
+- Kardinál Zsófia
 
 ### 2.2 Projektmunkások és felelősségeik
 
