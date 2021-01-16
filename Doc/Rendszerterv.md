@@ -270,6 +270,14 @@ Severity3:Alacsony prioritású hiba. Javítás az átadást követő 30 napban 
 | :----------: | ------- | ----- | ------------------------------------------------------------ | ------------------------- | --------------- |
 | Hírolvasás 1 | K11     | 1     | Belépés után Hírek olvasása a felhasználó által, a hírek címére kattintással | Választott hír megjelenik | 8               |
 
+
+
+|  Teszteset   | Funkció | Lépés | Feladat                                                      | Elvárt eredmény | Teszteset száma |
+| :----------: | ------- | ----- | ------------------------------------------------------------ | --------------- | --------------- |
+| Időjárás API | K12     | 1     | Belépési képernyőn az időjárás beillesztett cella ellenőrzése | Cella látható   | 9               |
+
+
+
 ## 12. Telepítési terv
 
 Fizikai telepítési terv: -Szükség van egy adatbázis szerverre, amely közvetlenül csatlakozik a webszerververhez. -A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
