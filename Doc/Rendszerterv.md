@@ -4,7 +4,7 @@
 
 ### 2.1 Projektszerepkörök, felelősségek
 
-Projekt Manager: Kovács Máté
+Projekt/Teszt Manager: Kovács Máté
 
 Feladata a projektagok közötti kommunikáció szervezése, irányítása.
 
@@ -246,11 +246,29 @@ Severity3:Alacsony prioritású hiba. Javítás az átadást követő 30 napban 
 | :---------------------: | ------- | ----- | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------- |
 | Lending page- REG Admin | K2      | 1     | Index oldal megnyitása böngészőben és regisztrációra kattintás | Oldal megnyitásra került, regisztrációs oldal megjelenik     | 3               |
 | Lending page- REG Admin | K2      | 2     | Regisztrációhoz szükséges adatok bevitele és folyamat véglegesítése | Regisztráció sikeres. Regisztráció után az adatbázisban látható a felhasználó | 3               |
-| Lending page- REG USER  | K2      | 1     | Index oldal megnyitása böngészőben és regisztrációra kattintás | Oldal megnyitásra került, regisztrációs oldal megjelenik     | 4               |
-| Lending page- REG USER  | K2      | 2     | Regisztrációhoz szükséges kapcsolati adatok bevitele         | Sikeres adatbevitel                                          | 4               |
-| Lending page- REG USER  | K2      | 3     | Preferencia checkbox töltés                                  | Dobozok láthatóak, adatbevitel sikeres. Regisztráció után az adatbázisban látható a felhasználó | 4               |
+| Lending page- REG USER  | K3      | 1     | Index oldal megnyitása böngészőben és regisztrációra kattintás | Oldal megnyitásra került, regisztrációs oldal megjelenik     | 4               |
+| Lending page- REG USER  | K3      | 2     | Regisztrációhoz szükséges kapcsolati adatok bevitele         | Sikeres adatbevitel                                          | 4               |
+| Lending page- REG USER  | k3      | 3     | Preferencia checkbox töltés                                  | Dobozok láthatóak, adatbevitel sikeres. Regisztráció után az adatbázisban látható a felhasználó | 4               |
+
+|                 Teszteset                  | Funkció | Lépés | Feladat                                                      | Elvárt eredmény                                              | Teszteset száma |
+| :----------------------------------------: | ------- | ----- | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------- |
+| Kapcsolati  és érdeklődési adatok megadása | K4-K5   | 1     | Regisztrációs folyamat indítása                              | Oldal megnyitásra került, regisztrációs oldal megjelenik     | 5               |
+| Kapcsolati  és érdeklődési adatok megadása | K4-K5   | 2     | Regisztrációhoz szükséges  emailcím beírása                  | Regisztráció után az adatbázisban látható a felhasználó emailcime a beírtaknak megfelelően | 5               |
+| Kapcsolati  és érdeklődési adatok megadása | K4-K5   | 3     | Regisztráció során véletlenszerűen kiválasztott érdeklődési körök megadása | Regisztráció után az adatbázisban látható a felhasználó érdeklődési köre az alábbi szabályokkal:  Üres checkbox a regisztráció során -->boolean0  / TEli checkbox a reg. során:boolean1 | 5               |
+
+| Teszteset | Funkció | Lépés | Feladat                                                      | Elvárt eredmény                                     | Teszteset száma |
+| :-------: | ------- | ----- | ------------------------------------------------------------ | --------------------------------------------------- | --------------- |
+| Belépés 1 | K7-8-9  | 1     | Belépési folyamat indítása                                   | Oldal megnyitásra került, belépési oldal megjelenik | 6               |
+| Belépés 1 | K7-8-9  | 2     | Invalid(adatbázisban nem szereplő) user/PW begépelése és belépés | Sikertelen belépés                                  | 6               |
+| Belépés 1 | K7-8-9  | 3     | A felhasználó nem megfelelő  belépési kód esetén újra próbálkozhat.  Limit: Nincs | Belépési képernyő ujra látható                      |                 |
+| Belépés 2 | K7-8    | 1     | Belépési folyamat indítása                                   | Oldal megnyitásra került, belépési oldal megjelenik | 7               |
+| Belépés 2 | K7-8    | 2     | Valid(adatbázisban szereplő) user/PW begépelése és belépés   | Sikeres belépés, a felhasználó a kezdőlapon landol  | 7               |
 
 
+
+|  Teszteset   | Funkció | Lépés | Feladat                                                      | Elvárt eredmény           | Teszteset száma |
+| :----------: | ------- | ----- | ------------------------------------------------------------ | ------------------------- | --------------- |
+| Hírolvasás 1 | K11     | 1     | Belépés után Hírek olvasása a felhasználó által, a hírek címére kattintással | Választott hír megjelenik | 8               |
 
 ## 12. Telepítési terv
 
