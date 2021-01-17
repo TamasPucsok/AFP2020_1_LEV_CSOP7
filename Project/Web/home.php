@@ -3,7 +3,7 @@ session_start();
 $con = mysqli_connect('localhost', 'root','123456');
 mysqli_select_db($con, 'news portal');
 $username=$_SESSION['username'];
-
+mysqli_query($con, "DROP TABLE hirek");
 $s="select * from interests where username ='$username'";
 $result = mysqli_query($con, $s);
 $row=mysqli_fetch_assoc($result);
@@ -13,43 +13,82 @@ $business = $row['business'];
 $culture = $row['culture'];
 $sport = $row['sport'];
 $tech = $row['tech'];
-$economy = $row['tech'];
+$economy = $row['economy'];
+$result1=FALSE;
 
-if($life==TRUE || $business==TRUE || $culture==TRUE || $sport==TRUE || $tech==TRUE || $economy==TRUE)
+
+if($life==TRUE)
 	{
-		$news="select * from news where life='TRUE'";
-		$result2=mysqli_query($con,$news);
-		$row1=mysqli_fetch_assoc($result2);
-	
-		$news2="select * from news where business='TRUE'";
-		$result3=mysqli_query($con,$news2);
-		$row2=mysqli_fetch_assoc($result3);
-	
-		$news3="select * from news where culture='TRUE'";
-		$result4=mysqli_query($con,$news3);
-		$row3=mysqli_fetch_assoc($result4);
-	
-		$news4="select * from news where sport='TRUE'";
-		$result5=mysqli_query($con,$news4);
-		$row4=mysqli_fetch_assoc($result5);
-
-		$news5="select * from news where tech='TRUE'";
-		$result6=mysqli_query($con,$news5);
-		$row5=mysqli_fetch_assoc($result6);
-
-		$news6="select * from news where economy='TRUE'";
-		$result7=mysqli_query($con,$news6);
-		$row6=mysqli_fetch_assoc($result7);
+		if(!$result1)
+		{
+			mysqli_query($con,"CREATE TABLE hirek AS SELECT title, url FROM news where life=$life");
+			$result1=TRUE;
+		}
+		else
+		{
+			mysqli_query($con, "INSERT INTO hirek (title, url) SELECT title, url FROM news where life=$life");
+		}
 	}
-	else
+if($business==TRUE)
 	{
-	echo '<script type="text/javascript">'; 
-	echo 'alert("A preferenciának megfelelően 1 hír sincs!");'; 
-	echo 'window.location.href = "index.html";';
-	echo '</script>';
+		if(!$result1)
+		{
+			mysqli_query($con,"CREATE TABLE hirek AS SELECT title, url FROM news where business=$business");
+			$result1=TRUE;
+		}
+		else{
+			mysqli_query($con, "INSERT INTO hirek (title, url) SELECT title, url FROM news where business=$business");
+			}
 	}
-
+if($culture==TRUE)
+	{
+		if(!$result1)
+		{
+			mysqli_query($con,"CREATE TABLE hirek AS SELECT title, url FROM news where culture=$culture");
+			$result1=TRUE;
+		}
+		else{
+			mysqli_query($con, "INSERT INTO hirek (title, url) SELECT title, url FROM news where culture=$culture");
+			}
+	}
+if($sport==TRUE)
+	{
+		if(!$result1)
+		{
+			mysqli_query($con,"CREATE TABLE hirek AS SELECT title, url FROM news where sport=$sport");
+			$result1=TRUE;
+		}
+		else{
+			mysqli_query($con, "INSERT INTO hirek (title, url) SELECT title, url FROM news where sport=$sport");
+			}
+	}
+if($tech==TRUE)
+	{
+		if(!$result1)
+		{
+			mysqli_query($con,"CREATE TABLE hirek AS SELECT title, url FROM news where tech=$tech");
+			$result1=TRUE;
+		}
+		else{
+			mysqli_query($con, "INSERT INTO hirek (title, url) SELECT title, url FROM news where tech=$tech");
+			}
+	}
+	
+if($economy==TRUE)
+	{
+		if(!$result1)
+		{
+			mysqli_query($con,"CREATE TABLE hirek AS SELECT title, url FROM news where economy=$economy");
+			$result1=TRUE;
+		}
+		else
+		{
+			mysqli_query($con, "INSERT INTO hirek (title, url) SELECT title, url FROM news where economy=$economy");
+		}
+	}
 ?>
+
+
 <html>
 <head>
 <meta charset="UTF-8">
@@ -65,9 +104,41 @@ if($life==TRUE || $business==TRUE || $culture==TRUE || $sport==TRUE || $tech==TR
 	<h1>Sikeres bejelentkezés</h1>
 </div>
 
-<h2> Üdvözöljük <?php echo $_SESSION['username']; ?> </h2>
+<h2> Üdvözöljük <?php echo $_SESSION['username']; ?> !</h2>
 
+<h3> Az alábbi táblázatban láthatja az Ön preferenciáinak megfelelő híreket!</h3>
 
+<?php
+
+$result2=mysqli_query($con,"select * from hirek group by title");
+$num = mysqli_num_rows($result2);
+if($num==0)
+{echo "Nincs megjelenítendő hír!";}
+else{
+echo "<table border = '1'>
+<tr>
+
+<th>Hír címe</th>
+
+<th>URL</th>
+</tr>";
+
+while($row = mysqli_fetch_array($result2))
+
+  {
+	  echo "<tr>";
+	  echo "<td>" . $row['title'] . "</td>";
+	  echo "<td>" . $row['url'] . "</td>";
+	  echo "</tr>";
+
+  }
+
+  echo "</table>";
+}
+?>
+<br>
+<br>
+<br>
 <a href="logout.php">Kijelentkezés</a> 
 
 
