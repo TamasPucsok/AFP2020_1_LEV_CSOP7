@@ -25,15 +25,25 @@ if($num==0){
 	exit();
 	
 	
-}else
+}elseif($rank=="admin")
 {
-	$reg= " insert into properties(surname, lastname, gender, username, rank) values ('$surname', '$lastname', '$gender', '$username', '$rank')";
+	$reg= "insert into properties(surname, lastname, gender, username, rank) values ('$surname', '$lastname', '$gender', '$username', '$rank')";
 	mysqli_query($con, $reg);
 	$_SESSION['username']=$username;
 	echo '<script type="text/javascript">'; 
-	echo 'alert("Adja meg a preferenciáit.");'; 
+	echo 'alert("Köszönjük! Lépjen be a hírek feltöltéséhez.");'; 
+	echo 'window.location.href = "index.html";';
+	echo '</script>';
+}elseif($rank=="user")
+{
+	$reg= "insert into properties(surname, lastname, gender, username, rank) values ('$surname', '$lastname', '$gender', '$username', '$rank')";
+	mysqli_query($con, $reg);
+	$_SESSION['username']=$username;
+	echo '<script type="text/javascript">'; 
+	echo 'alert("Adja meg a preferenciáit!");'; 
 	echo 'window.location.href = "interests.php";';
 	echo '</script>';
 }
+
 
 ?>
