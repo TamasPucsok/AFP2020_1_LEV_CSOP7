@@ -45,7 +45,7 @@ $num = mysqli_num_rows($result);
 if($num==0){
 	echo '<script type="text/javascript">'; 
 	echo 'alert("HIBA: Nincs az adatbázisban a felhasználó!");'; 
-	echo 'window.location.href = "interests.php";';
+	echo 'window.location.href = "index.php";';
 	echo '</script>';
 	exit();
 	
