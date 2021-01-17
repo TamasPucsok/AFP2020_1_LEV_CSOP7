@@ -1,17 +1,17 @@
 body{
-	background: linear-gradient(rgba(50,50,50, 0.6),rgba(50,50,50, 0.6)), url(image.jpeg);
+	background: linear-gradient(rgba(50,50,50, 0.7),rgba(50,50,50, 0.7)), url(image.jpeg);
 	background-size: cover;
 	background-position: center;
 }
 
-.newsupload-box{
-	max-width: 550px;
+.details-box{
+	max-width: 800px;
 	float: none;
-	margin: 160px auto;
+	margin: 40px auto;
 	
 }
 
-.data-field{
+.details{
 	background: rgba(211,211,211, 0.7);
 	padding: 20px;
 	
