@@ -7,10 +7,10 @@
 </head>
 <body>
      <div class="container">
-	 <div class="newsupload-box">
+	 <div class="details-box">
      <div class="row">
      
-	 <div class="col-md-12 data-field">
+	 <div class="col-md-10 details">
      <h2>Add meg a hír adatait</h2>
      <form action="upload.php" method="post">
      
@@ -59,6 +59,7 @@
     </div>
 	</div>
     </div>
+	</div>
 
 </body>
 </html>
