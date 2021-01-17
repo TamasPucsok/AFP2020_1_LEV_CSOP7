@@ -1,3 +1,8 @@
+<?php
+session_start();
+$username=$_SESSION['username'];
+$_SESSION['username']=$username;
+?>
 <html>
 <head>
 	<title> Felhasználó adatok </title>
@@ -13,12 +18,7 @@
 	 <div class="col-md-10 details">
      <h2>Felhasználó adatok </h2>
      <form action="push.php" method="post">
-     
-		<div class="form-group">
-		 <label> Korábban megadott felhasználónév </label>
-		 <input type="text" name="username" class="form-control" required>
-		</div>
-		
+   
 		<div class="form-group">
 		 <label> Vezetéknév </label>
 		 <input type="text" name="surname" class="form-control" required>
@@ -30,6 +30,8 @@
 		</div>
 		
 		<div class="select-block">
+			<label> Rangja </label>
+			<br>
 			<select name="rank">
 				<option value="" disabled selected>Kérjük válasszon</option>
 				<option value="user">Felhasználó</option>
@@ -38,6 +40,8 @@
 		</div>
 		
 		<div class="select-block">
+			<label> Neme </label>
+			<br>
 			<select name="gender">
 				<option value="" disabled selected>Kérjük válasszon</option>
 				<option value="male">Férfi</option>
@@ -52,6 +56,7 @@
 		 <input type="date" name="dateofbirth" class="form-control" required>
 		 </div>
 		-->
+		<br>
 		<button type="submit" class="btn btn-primary"> Mentés </button>
 		
 		</form>
