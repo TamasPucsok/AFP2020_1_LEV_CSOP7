@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bejelentkezés vagy regisztráció</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<nav class="main-nav">
+	<ul>
+		<li><a class="signin" href="#0">Bejelentkezés</a></li>
+		<li><a class="signup" href="#0">Regisztráció</a></li>
+	</ul>
+</nav>
+
+<div class="user-modal">
+		<div class="user-modal-container">
+			<ul class="switcher">
+				<li><a href="#0">Bejelentkezés</a></li>
+				<li><a href="#0">Regisztráció</a></li>
+			</ul>
+
+			<div id="login">
+				<form class="form" action="signin.php" method="POST">
+					<p class="fieldset">
+						<label class="image-replace username" for="signin-username">Felhasználónév</label>
+						<input class="full-width has-padding has-border" id="signin-username" type="text" name="username" placeholder="Felhasználónév" required>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace password" for="signin-password">Jelszó</label>
+						<input class="full-width has-padding has-border" id="signin-password" type="password"  name="password" placeholder="Jelszó">
+						<a href="#0" class="hide-password">Mutat</a>
+						<span class="error-message">Helytelen bejelentkezési adatok</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width" type="submit" value="Bejelentkezés">
+					</p>
+				</form>
+				
+				<p class="form-bottom-message"><a href="#0">Elfelejtette jelszavát?</a></p>
+			</div>
+
+			<div id="signup">
+				<form class="form" action="signup.php" method="post">
+					<p class="fieldset">
+						<label class="image-replace username" for="signup-username">Felhasználónév</label>
+						<input class="full-width has-padding has-border" id="signup-username" type="text" name="username" placeholder="Felhasználónév" required>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace email" for="signup-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signup-email" type="email" name="email" placeholder="E-mail" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" title="Helytelen email formátum">
+						<span class="error-message">Helytelen email formátum</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace password" for="signup-password">Jelszó</label>
+						<input class="full-width has-padding has-border" id="signup-password" type="password" name="password" placeholder="Jelszó" pattern=".{6,}" required title="6 karakter a minimum">
+						<a href="#0" class="hide-password">Mutat</a>
+						<span class="error-message">Minimum 6 karakter hosszú legyen a jelszó</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" name="submit" value="Regisztráció">
+					</p>
+				</form>
+			</div>
+
+			<div id="reset-password">
+				<p class="form-message">BlablablablaBlablablablaBlablablablaBlablablablaBlablablabla</p>
+
+				<form class="form">
+					<p class="fieldset">
+						<label class="image-replace email" for="reset-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+						<span class="error-message">An account with this email does not exist!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Új jelszó">
+					</p>
+				</form>
+
+				<p class="form-bottom-message"><a href="#0">Vissza a bejelentkezéshez</a></p>
+			</div>
+			<a href="#0" class="close-form">Close</a>
+		</div>
+	</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
