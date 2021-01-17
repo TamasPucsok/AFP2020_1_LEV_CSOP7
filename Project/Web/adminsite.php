@@ -53,10 +53,11 @@
      <label> Gazdaság </label>
      <input type= "checkbox" name= "economy" class="form-control">
      </div>
-
-		<button type="submit" class="btn btn-primary"> Mentés </button>
-
-    </div>
+		
+	<button type="submit" class="btn btn-primary"> Mentés </button>
+    </form>
+	<form action="logout.php" method="post">
+	<button type="submit" class="btn btn-primary"> Kilépés </button>
 	</div>
     </div>
 	</div>
