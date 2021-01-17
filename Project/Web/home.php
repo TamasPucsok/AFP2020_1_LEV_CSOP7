@@ -1,0 +1,75 @@
+<?php
+session_start();
+$con = mysqli_connect('localhost', 'root','123456');
+mysqli_select_db($con, 'news portal');
+$username=$_SESSION['username'];
+
+$s="select * from interests where username ='$username'";
+$result = mysqli_query($con, $s);
+$row=mysqli_fetch_assoc($result);
+
+$life = $row['life'];
+$business = $row['business'];
+$culture = $row['culture'];
+$sport = $row['sport'];
+$tech = $row['tech'];
+$economy = $row['tech'];
+
+if($life==TRUE || $business==TRUE || $culture==TRUE || $sport==TRUE || $tech==TRUE || $economy==TRUE)
+	{
+		$news="select * from news where life='TRUE'";
+		$result2=mysqli_query($con,$news);
+		$row1=mysqli_fetch_assoc($result2);
+	
+		$news2="select * from news where business='TRUE'";
+		$result3=mysqli_query($con,$news2);
+		$row2=mysqli_fetch_assoc($result3);
+	
+		$news3="select * from news where culture='TRUE'";
+		$result4=mysqli_query($con,$news3);
+		$row3=mysqli_fetch_assoc($result4);
+	
+		$news4="select * from news where sport='TRUE'";
+		$result5=mysqli_query($con,$news4);
+		$row4=mysqli_fetch_assoc($result5);
+
+		$news5="select * from news where tech='TRUE'";
+		$result6=mysqli_query($con,$news5);
+		$row5=mysqli_fetch_assoc($result6);
+
+		$news6="select * from news where economy='TRUE'";
+		$result7=mysqli_query($con,$news6);
+		$row6=mysqli_fetch_assoc($result7);
+	}
+	else
+	{
+	echo '<script type="text/javascript">'; 
+	echo 'alert("A preferenciának megfelelően 1 hír sincs!");'; 
+	echo 'window.location.href = "index.html";';
+	echo '</script>';
+	}
+
+?>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>Bejelentkezés vagy regisztráció</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+
+ <body>
+
+<div style="text-align: center">
+	<h1>Sikeres bejelentkezés</h1>
+</div>
+
+<h2> Üdvözöljük <?php echo $_SESSION['username']; ?> </h2>
+
+
+<a href="logout.php">Kijelentkezés</a> 
+
+
+</body>
+</html>
