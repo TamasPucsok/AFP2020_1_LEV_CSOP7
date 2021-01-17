@@ -37,7 +37,7 @@ if(isset($_POST['economy'])){
 	$economy =TRUE;
 }
 
-$s = " select * from interests where username = '$username'";
+$s = " select * from user where username = '$username'";
 
 $result = mysqli_query($con, $s);
 $num = mysqli_num_rows($result);
@@ -45,7 +45,7 @@ $num = mysqli_num_rows($result);
 if($num==0){
 	echo '<script type="text/javascript">'; 
 	echo 'alert("HIBA: Nincs az adatbázisban a felhasználó!");'; 
-	echo 'window.location.href = "index.php";';
+	echo 'window.location.href = "interests.php";';
 	echo '</script>';
 	exit();
 	

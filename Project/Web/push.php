@@ -1,12 +1,12 @@
 <?php
 
 session_start();
-
 $con = mysqli_connect('localhost', 'root','123456');
 
 mysqli_select_db($con, 'news portal');
 
 $username=$_SESSION['username'];
+
 $surname=$_POST['surname'];
 $lastname=$_POST['lastname'];
 $rank=$_POST['rank'];

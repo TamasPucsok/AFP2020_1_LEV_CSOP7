@@ -48,8 +48,8 @@ if($life==TRUE || $business==TRUE || $culture==TRUE || $sport==TRUE || $tech==TR
 	echo 'window.location.href = "index.html";';
 	echo '</script>';
 	}
-?>
 
+?>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -60,18 +60,16 @@ if($life==TRUE || $business==TRUE || $culture==TRUE || $sport==TRUE || $tech==TR
 </head>
 
  <body>
+
 <div style="text-align: center">
 	<h1>Sikeres bejelentkezés</h1>
 </div>
 
 <h2> Üdvözöljük <?php echo $_SESSION['username']; ?> </h2>
 
-<h1> <?php echo $row1['url'] ?> </h1>
-<h1> <?php echo $row2['url'] ?> </h1>
-<h1> <?php echo $row3['url'] ?> </h1>
-<h1> <?php echo $row4['url'] ?> </h1>
-<h1> <?php echo $row5['url'] ?> </h1>
 
-<a href="logout.php">Kijelentkezés</a>
+<a href="logout.php">Kijelentkezés</a> 
+
+
 </body>
 </html>

@@ -9,6 +9,7 @@ $username=$_POST['username'];
 $email=$_POST['email'];
 $password=$_POST['password'];
 
+$passwordHashed = password_hash($password, PASSWORD_BCRYPT);
 $s = " select * from user where username = '$username'";
 
 $result = mysqli_query($con, $s);
@@ -23,8 +24,9 @@ if($num==1){
 	
 }else
 {
-	$reg= " insert into user(username, password, email) values ('$username', '$password', '$email')";
+	$reg= " insert into user(username, password, email) values ('$username', '$passwordHashed', '$email')";
 	mysqli_query($con, $reg);
+	$_SESSION['username']=$username;
 	echo '<script type="text/javascript">'; 
 	echo 'alert("Felhasználónevét tároltuk, kérem adja meg a további adatokat a következő oldalon.");'; 
 	echo 'window.location.href = "properties.php";';
