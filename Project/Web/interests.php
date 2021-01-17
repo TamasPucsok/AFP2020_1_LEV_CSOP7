@@ -1,3 +1,9 @@
+<?php
+session_start();
+$username=$_SESSION['username'];
+$_SESSION['username']=$username;
+?>
+
 <html>
 <head>
 	<title> Felasználó érdeklődési köre </title>
@@ -7,18 +13,13 @@
 </head>
 <body>
      <div class="container">
-	 <div class="newsupload-box">
+	 <div class="details-box">
      <div class="row">
      
-	 <div class="col-md-12 data-field">
+	 <div class="col-md-10 details">
      <h2>Add meg az érdeklődési köröd!</h2>
      <form action="upload2.php" method="post">
-     
-	 <div class="form-group">
-     <label> Felhasználónév </label>
-     <input type="text" name="username" class="form-control" required>
-     </div>
-	 
+	 <br>
 	 <div class="form-group">
      <label> Életmód </label>
      <input type ="checkbox" name="life" class="form-control">
