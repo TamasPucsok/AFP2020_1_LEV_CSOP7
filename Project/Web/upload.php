@@ -56,7 +56,7 @@ if($num==1){
 	mysqli_query($con, $reg);
 	echo '<script type="text/javascript">'; 
 	echo 'alert("Sikeres feltöltés!");'; 
-	echo 'window.location.href = "index.html";';
+	echo 'window.location.href = "adminsite.php";';
 	echo '</script>';
 	
 }
