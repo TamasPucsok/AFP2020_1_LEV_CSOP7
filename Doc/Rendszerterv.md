@@ -117,18 +117,21 @@ A rendszerünkben két rendszerszereplő csoportot különböztetünk meg. Az eg
 
 ### 5.5 Képernyőtervek
 
-A képernyőtervek egy html/css kód használatával megírt prototípus weboldal formájában állnak rendelkezésre, melyeket a leendő felhasználók számára készítettünk el a funkcionális specifikáció részeként, és mivel pozitív fogadtatásra talált, ezért a rendszerterv része is lett. A forrás fájlok a GitHub-ról tölthetőek le, ezt követően lehet megjeleníteni az oldalakat böngészőben. A prototípus nem fed le minden forgatókönyvet, az űrlapok mezői adatok nélkül szerepelnek, néhány esetben ki van töltve. A menü rendszerből minden funkcióhoz tartozó képernyőterv user és admin oldalról is elérhetőek.
+A képernyőtervek egy html/css kód használatával megírt prototípus weboldal formájában állnak rendelkezésre, melyeket a leendő felhasználók számára készítettünk el a funkcionális specifikáció részeként, és mivel pozitív fogadtatásra talált, ezért a rendszerterv része is lett. A forrás fájlok a GitHub-ról tölthetőek le, ezt követően lehet megjeleníteni az oldalakat böngészőben. A prototípus nem fed le minden forgatókönyvet, az űrlapok mezői adatok nélkül szerepelnek. A menü rendszerből minden funkcióhoz tartozó képernyőterv user és admin oldalról is elérhetőek.
 
 Főbb oldalak:
 
-- **kezdolap.html**, amely minden felhasználó számára először jelenik meg.
-- **belepve_olvaso.html**, amely az olvasó bejelentkezése után érhető el, ez jelenleg nem érhető el a kezdőlapon keresztül.
-- **belepve.html**, amely az adminisztrátor könyvtáros bejelentkezése után jelenik meg. Ez a kezdőoldal *Belépés* menüpontján keresztül elérhető.
-
-**Megjegyzések:**
-
-- Adminisztrátori jogosultsággal nem rendelkező könyvtáros menürendszere annyiban tér el a fentitől, hogy a *Könyvtáros* menüpont nem szerepel az oldalán, mint az a Menühierarchia fejezetben is ismertetésre került.
-- Az *Egyszerű keresés* és az *Részletes keresés* oldalak elérhetők a kezdőlapról és belépést követően is, azonban a keresés eredménye oldalak a kezdőlapra visznek vissza, megváltozik a menürendszer, ez tekinthető a prototípus hiányosságának, azonban a keresési folyamatot így is demonstrálja a weboldal.
+- **index.html** kezdőoldal, ami minden felhasználó számára megjelenik
+- **signup.php**, **signin.php** regisztráció, lehet adminként és lehet felhasználóként is
+- **interests.php** a regisztráció végén jelenik meg, érdeklődési kör kiválasztása
+- **home.php** adott felhasználóval bejelentkezett oldal, hírek megjelenítésével
+- **home_old.php** adott felhasználóval bejelentkezett oldal, hírek megjelenítése nélkül
+- **properties.php** felhasználó személyes adatait lehet beállítani
+- **adminsite.php** adminként új hír feltöltése az oldalra
+- **push.php** adatbázist tölti fel a formban megadott adatokkal
+- **upload.php** adatbázist tölti fel a formban megadott adatokkal
+- **upload2.php** adatbázist tölti fel a formban megadott adatokkal
+- **logout.php**, a felhasználó kijelentkezése
 
 ## 6. Fizikai környezet
 
