@@ -218,7 +218,7 @@ MySql adatbázis szervert használunk az adatok tárolására.
 
 ## 11. Tesztterv
 
-A tesztelés célja a projekt által leszállított fejlesztés átadás előtti funkcionális tesztelése. A tesztelés során a tesztelők feladata a fejezetbe rögzített tesztesetek futtatása, valamint a futtatási eredmények rögzítése a  jegyzőkönyvben. (Doc/Teszt_JEgyzokonyv.MD)
+A tesztelés célja a projekt által leszállított fejlesztés átadás előtti funkcionális tesztelése. A tesztelés során a tesztelők feladata a fejezetbe rögzített tesztesetek futtatása, valamint a futtatási eredmények rögzítése a  jegyzőkönyvben. (Doc/Tesztjegyzokonyv.MD)
 
 A tesztelés során tekintettel arra, hogy a weboldal mögötti adatbázis lokális szervereken fut, javasolt az egyes teszt funkciókat csoportosan tesztelni, illetve  tesztelés során minden tesztelőnek létrehozni felhasználókat és tartalmat a saját adatbázisában.  
 
