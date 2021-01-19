@@ -85,7 +85,8 @@ Bejelentkezés mindenki számára ugyanolyan lefutású: A ’Belépés’ menü
 
 ### 3.3 Üzleti entitások
 
-- hír
+- admin
+- felhasználó
 
 ## 4. Követelmények
 
@@ -111,9 +112,9 @@ A rendszerünkben két rendszerszereplő csoportot különböztetünk meg. Az eg
 
 ### 5.4 Menü hierarchiák
 
-**Olvasóként** belépve a rendszerbe a 
+**Olvasóként** belépve a rendszerbe: 
 
-**Adminisztrátorként** belépve a rendszerbe a 
+**Adminisztrátorként** belépve a rendszerbe: 
 
 ### 5.5 Képernyőtervek
 
@@ -218,7 +219,7 @@ MySql adatbázis szervert használunk az adatok tárolására.
 
 ## 11. Tesztterv
 
-A tesztelés célja a projekt által leszállított fejlesztés átadás előtti funkcionális tesztelése. A tesztelés során a tesztelők feladata a fejezetbe rögzített tesztesetek futtatása, valamint a futtatási eredmények rögzítése a  jegyzőkönyvben. (Doc/Tesztjegyzokonyv.MD)
+A tesztelés célja a projekt által leszállított fejlesztés átadás előtti funkcionális tesztelése. A tesztelés során a tesztelők feladata a fejezetbe rögzített tesztesetek futtatása, valamint a futtatási eredmények rögzítése a  jegyzőkönyvben. (Doc/Teszt_JEgyzokonyv.MD)
 
 A tesztelés során tekintettel arra, hogy a weboldal mögötti adatbázis lokális szervereken fut, javasolt az egyes teszt funkciókat csoportosan tesztelni, illetve  tesztelés során minden tesztelőnek létrehozni felhasználókat és tartalmat a saját adatbázisában.  
 
@@ -272,6 +273,14 @@ Severity3:Alacsony prioritású hiba. Javítás az átadást követő 30 napban 
 |  Teszteset   | Funkció | Lépés | Feladat                                                      | Elvárt eredmény           | Teszteset száma |
 | :----------: | ------- | ----- | ------------------------------------------------------------ | ------------------------- | --------------- |
 | Hírolvasás 1 | K11     | 1     | Belépés után Hírek olvasása a felhasználó által, a hírek címére kattintással | Választott hír megjelenik | 8               |
+
+
+
+|  Teszteset   | Funkció | Lépés | Feladat                                                      | Elvárt eredmény | Teszteset száma |
+| :----------: | ------- | ----- | ------------------------------------------------------------ | --------------- | --------------- |
+| Időjárás API | K12     | 1     | Belépési képernyőn az időjárás beillesztett cella ellenőrzése | Cella látható   | 9               |
+
+
 
 ## 12. Telepítési terv
 
