@@ -94,11 +94,12 @@ if($economy==TRUE)
 <meta charset="UTF-8">
   <title>Bejelentkezés vagy regisztráció</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
 
  <body>
+ 
 
 <div style="text-align: center">
 	<h1>Sikeres bejelentkezés</h1>
@@ -108,6 +109,18 @@ if($economy==TRUE)
 
 <h3> Az alábbi táblázatban láthatja az Ön preferenciáinak megfelelő híreket!</h3>
 
+<div class="footer-menu">
+            <div class="container">
+                <div class="f-menu">
+                    <a href="">Használati feltételek</a>
+                    <a href="">Adatvédelmi irányelvek</a>
+                    <a href="">Cookies</a>
+                    <a href="">Kisegítő lehetőségek</a>
+                    <a href="">Reklámozz velünk</a>
+                    <a href="">Lépj kapcsolatba velünk</a>
+                </div>
+            </div>
+        </div>
 <?php
 
 $result2=mysqli_query($con,"select * from hirek group by title");
