@@ -99,7 +99,26 @@ if($economy==TRUE)
 </head>
 
  <body>
- 
+ <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tb-contact">
+                            <p><i class="fas fa-envelope"></i>info@mail.com</p>
+                            <p><i class="fas fa-phone-alt"></i>+012 345 6789</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tb-menu">
+                            <a href="">123</a>
+                            <a href="">123</a>
+                            <a href="">123</a>
+                            <a href="">123</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 <div style="text-align: center">
 	<h1>Sikeres bejelentkezés</h1>
@@ -108,6 +127,7 @@ if($economy==TRUE)
 <h2> Üdvözöljük <?php echo $_SESSION['username']; ?> !</h2>
 
 <h3> Az alábbi táblázatban láthatja az Ön preferenciáinak megfelelő híreket!</h3>
+
 
 <div class="footer-menu">
             <div class="container">
